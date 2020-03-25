@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="752.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ListView fx:id="sourceList" layoutX="25.0" layoutY="193.0" prefHeight="378.0" prefWidth="158.0" />
+      <ListView fx:id="destinationList" layoutX="193.0" layoutY="192.0" prefHeight="378.0" prefWidth="158.0" />
+      <ListView fx:id="routesList" layoutX="362.0" layoutY="191.0" prefHeight="378.0" prefWidth="370.0" />
+      <Label layoutX="25.0" layoutY="163.0" prefHeight="24.0" prefWidth="77.0" text="Source">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="193.0" layoutY="163.0" text="Destination ">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="362.0" layoutY="163.0" text="Routes">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="sourceButton" layoutX="143.0" layoutY="162.0" mnemonicParsing="false" onAction="#source_Button" text="Get" />
+      <Button fx:id="destinationButton" layoutX="311.0" layoutY="162.0" mnemonicParsing="false" onAction="#destination_button" text="Get" />
+      <Button fx:id="routesButton" layoutX="692.0" layoutY="162.0" mnemonicParsing="false" onAction="#routes_button" text="Get" />
+      <TextField fx:id="priceField" layoutX="498.0" layoutY="69.0" prefHeight="27.0" prefWidth="167.0" />
+      <TextField fx:id="ticketField" layoutX="321.0" layoutY="70.0" prefHeight="27.0" prefWidth="167.0" />
+      <Button fx:id="reserveButton" layoutX="498.0" layoutY="102.0" mnemonicParsing="false" onAction="#reserve_button" prefHeight="27.0" prefWidth="167.0" text="Reserve" />
+      <Label layoutX="23.0" layoutY="23.0" text="Clients">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="350.0" layoutY="46.0" prefHeight="19.0" prefWidth="130.0" text="No of Tickets">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="554.0" layoutY="46.0" prefHeight="24.0" prefWidth="50.0" text="Price">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
